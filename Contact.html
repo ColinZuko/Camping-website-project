@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping Koordes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="StyleSheet" href="Style/Contact_style.css">
+	<script src="Script/jquery-3.4.1.min.js"></script>
+	<script src="Script/MainScript.js"></script>
+	<script src="Script/ContactJS.js"></script>
+</head>
+<body>
+	<div class="off-screen-menu">
+	      <ul> 
+	      <a id="MainP" href="Index">Home</a> 
+          <a id="OmgevingP" href="Omgeving">Omgeving</a> 
+		  <a id="FotoP" href="Foto">Foto's</a> 
+		  <a id="TarievenP" href="Tarieven">Tarieven</a> 
+		  <a id="ContactP" href="Contact">Contact</a>
+      </ul>
+	</div>
+	
+
+    <nav class="nav">
+		
+      <a href="Index">
+                <img src="Images/Logo.png" alt="LogoImg">
+      </a>
+      <ul>             
+          <a id="Omgeving" href="Omgeving">Omgeving</a> 
+		  <a id="Foto" href="Foto">Foto's</a> 
+		  <a id="Tarieven" href="Tarieven">Tarieven</a> 
+		  <a id="Contact" href="Contact">Contact</a>
+      </ul>
+	   
+    </nav>
+		
+	  <div class="phone-nav">
+			<div class="ham-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+    <h3>Contact</h3>
+    <div id="contactinfo">
+    <p>Voor reserveringen of vragen graag contact opnemen met het nummer:<br>
+        (0031) (0)545-431216<br><br>
+        
+        of mail naar Info@campingkoordes.nl</p>
+
+      
+    </div>
+    
+
+     <div id="Daform">
+    <form method="post" class="form">
+        <input type="hidden" name="access_key" value="1b3c945d-3236-4129-8ea7-b511456cc791">
+        
+        <div class="flex">
+            <label>
+                <input required="" placeholder="" type="text" class="input" id="voornaam" name="voornaam">
+                <span>voornaam</span>
+            </label>
+    
+            <label>
+                <input required="" placeholder="" type="text" class="input" id="achternaam" name="achternaam">
+                <span>achternaam</span>
+            </label>
+        </div>  
+                
+        <label>
+            <input required="" placeholder="" type="email" class="input" id="email" name="email">
+            <span>email</span>
+        </label> 
+            
+        <label>
+            <input required="" type="tel" placeholder="" class="input" id="telefoon" name="telefoon">
+            <span>telefoon nummer</span>
+        </label>
+        <label>
+            <textarea required="" rows="3" placeholder="" class="input01" id="bericht" name="bericht"></textarea>
+            <span>bericht</span>
+        </label>
+        
+        <button class="fancy" name="submit">
+          <span class="top-key"></span>
+          <span class="text">verzenden</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </button>
+        <div id="result"></div>
+    </form>
+    </div>
+</body>
+</html>
